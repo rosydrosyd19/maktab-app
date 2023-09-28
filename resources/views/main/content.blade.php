@@ -10,7 +10,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -21,8 +21,10 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        
-        @yield('title')
+
+        {{-- content fill --}}
+        @yield('content')
+
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->

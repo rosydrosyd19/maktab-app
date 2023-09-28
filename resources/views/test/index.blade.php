@@ -1,3 +1,5 @@
-@extends('main.content')
+@extends('main.index')
 
-@section('title', 'Page Title')
+@section('content')
+    <h1>test</h1>
+@endsection

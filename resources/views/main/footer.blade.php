@@ -45,9 +45,9 @@
 <script src="adminlte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="adminlte/dist/js/adminlte.js"></script>
-{{-- <!-- AdminLTE for demo purposes -->
+<!-- AdminLTE for demo purposes -->
 <script src="adminlte/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="adminlte/dist/js/pages/dashboard.js"></script> --}}
+<script src="adminlte/dist/js/pages/dashboard.js"></script>
 </body>
 </html>
