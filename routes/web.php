@@ -19,9 +19,3 @@ Route::get('/', function () {
 Route::get('/main', function () {
     return view('main/index');
 });
-
-
-// user for example
-Route::get('/test', function () {
-    return view('test/index');
-});
