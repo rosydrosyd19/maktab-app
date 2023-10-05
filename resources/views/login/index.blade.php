@@ -5,6 +5,9 @@
 @section('title', 'Login')
 
 <body class="hold-transition login-page d-flex flex-column min-vh-100">
+{{-- notification --}}
+@include('sweetalert::alert')
+  
     <div class="login-box">
       <div class="login-logo">
         <a href="#"><b>Maktab</b>APP</a>
