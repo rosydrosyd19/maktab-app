@@ -1,8 +1,9 @@
 <form action="/register" method="post">
     @csrf
+
     {{-- inputan name --}}
     <div class="input-group mb-3">
-      <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" 
+      <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror"
       placeholder="Full name" required value="{{ old('name') }}">
       <div class="input-group-append">
         <div class="input-group-text">
@@ -19,7 +20,7 @@
 
     {{-- inputan email --}}
     <div class="input-group mb-3">
-      <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" 
+      <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror"
       placeholder="Email" required value="{{ old('email') }}">
       <div class="input-group-append">
         <div class="input-group-text">
@@ -36,7 +37,7 @@
 
     {{-- inputan password --}}
     <div class="input-group mb-3">
-      <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror" 
+      <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror"
       placeholder="Password" required >
       <div class="input-group-append">
         <div class="input-group-text">
@@ -53,7 +54,7 @@
 
     {{-- repassowrd (tidak di kirim ke db)--}}
     <div class="input-group mb-3">
-      <input type="password" name="repassword" id="repassword" class="form-control @error('repassword') is-invalid @enderror" 
+      <input type="password" name="repassword" id="repassword" class="form-control @error('repassword') is-invalid @enderror"
       placeholder="Retype password" required>
       <div class="input-group-append">
         <div class="input-group-text">

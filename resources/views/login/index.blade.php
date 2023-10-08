@@ -2,6 +2,7 @@
 
 @extends('layouts.header')
 
+{{-- nama head --}}
 @section('title', 'Login')
 
 @extends('login.form')
