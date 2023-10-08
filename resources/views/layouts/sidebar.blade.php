@@ -10,7 +10,7 @@
         <img src="adminlte/dist/img/logo-xs.png" alt="AdminLTE Docs Logo Small" class="brand-image-xl logo-xs">
         <img src="adminlte/dist/img/logo-xl.png" alt="AdminLTE Docs Logo Large" class="brand-image-xs logo-xl" style="left: 12px">
     </a> --}}
-      
+
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -20,7 +20,7 @@
           <img src="adminlte/dist/img/maktab-lite.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">{{ auth()->user()->name }}</a>
         </div>
       </div>
 
