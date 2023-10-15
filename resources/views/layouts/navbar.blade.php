@@ -1,6 +1,6 @@
 <body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper">    
-  
+<div class="wrapper">
+
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -125,6 +125,89 @@
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
         </div>
       </li>
+
+      <!-- Dropdown About -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fa fa-user"></i>
+          {{-- <span class="badge badge-warning navbar-badge">15</span> --}}
+        </a>
+        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+          <div class="dropdown-divider"></div>
+
+          <!-- Provile -->
+          <div class="col-md-12">
+            <!-- Widget: user widget style 1 -->
+            <div class="card card-widget widget-user">
+              <!-- Add the bg color to the header using any of the bg-* classes -->
+              <div class="widget-user-header text-white"
+                   style="background: url('adminlte/dist/img/photo1.png') center center;">
+                <h3 class="widget-user-username text-right">{{ auth()->user()->name }}</h3>
+                <h5 class="widget-user-desc text-right">Web Designer</h5>
+              </div>
+              <div class="widget-user-image">
+                <img class="img-circle" src="adminlte/dist/img/maktab-lite.png" alt="User Avatar">
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-sm-4 border-right">
+                    <div class="description-block">
+                      <h5 class="description-header">3,200</h5>
+                      <span class="description-text">SALES</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-sm-4 border-right">
+                    <div class="description-block">
+                      <h5 class="description-header">13,000</h5>
+                      <span class="description-text">FOLLOWERS</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-sm-4">
+                    <div class="description-block">
+                      <h5 class="description-header">35</h5>
+                      <span class="description-text">PRODUCTS</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+            </div>
+            <!-- /.widget-user -->
+          </div>
+
+          <!-- Button -->
+          <div class="col-md-12">
+            <!-- Widget: user widget style 1 -->
+            <div class="card card-widget widget-user">
+              <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="row">
+                  <div class="col-sm-6 border-right">
+                        <a href="#">
+                            <button type="button" class="btn btn-outline-info btn-block btn-flat"><i class="fa fa-info-circle"></i> About</button>
+                        </a>
+                        </div>
+                  <!-- /.col -->
+                  <div class="col-sm-6">
+                        <a href="#">
+                            <button type="button" class="btn btn-outline-danger btn-block btn-flat">Logout <i class="fa fa-sign-out-alt"></i> </button>
+                        </a>
+                        </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.widget-user -->
+          </div>
+
+        </div>
+      </li>
+
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
