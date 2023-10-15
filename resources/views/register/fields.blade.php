@@ -69,16 +69,25 @@
       @enderror
     </div>
 
-
     <div class="row">
       <div class="col-8">
-        <div class="icheck-primary">
-          <input type="checkbox" id="agreeTerms" name="terms" value="agree">
-          <label for="agreeTerms">
-           I agree to the <a href="#">terms</a>
-          </label>
+
+        {{-- terms (tidak di kirim ke db)--}}
+        <div class="form-check">
+            <input class="form-check-input @error('terms') is-invalid @enderror" type="checkbox" value="1" id="terms" name="terms"
+            required>
+            <label class="form-check-label">
+                I agree to the <a href="#">terms</a>
+            </label>
+            {{-- keterangan error --}}
+            @error('terms')
+            <div  class="invalid-feedback">
+            You must agree before submitting.
+            </div>
+            @enderror
         </div>
       </div>
+
       <!-- /.col -->
       <div class="col-4">
         <button type="submit" class="btn btn-primary btn-block">Register</button>

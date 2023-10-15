@@ -14,17 +14,19 @@
               {{-- isi inputan form --}}
               @include('login.fields')
 
-              <div class="social-auth-links text-center mb-3">
+              {{-- login dengan google --}}
+              {{-- <div class="social-auth-links text-center mb-3">
                 <p>- OR -</p>
                 <a href="#" class="btn btn-block btn-danger">
                   <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
                 </a>
-              </div>
-              <!-- /.social-auth-links -->
+              </div> --}}
 
-              <p class="mb-1">
+              {{-- forgot password --}}
+              {{-- <p class="mb-1">
                 <a href="forgot-password.html">I forgot my password</a>
-              </p>
+              </p> --}}
+
               <p class="mb-0">
                 <a href="/register" class="text-center">Register a new account</a>
               </p>

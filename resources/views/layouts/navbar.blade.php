@@ -194,9 +194,10 @@
                         </div>
                   <!-- /.col -->
                   <div class="col-sm-6">
-                        <a href="#">
-                            <button type="button" class="btn btn-outline-danger btn-block btn-flat">Logout <i class="fa fa-sign-out-alt"></i> </button>
-                        </a>
+                        <form action="/logout" method="post">
+                            @csrf
+                            <button type="submit" class="btn btn-outline-danger btn-block btn-flat">Logout <i class="fa fa-sign-out-alt"></i> </button>
+                        </form>
                         </div>
                   <!-- /.col -->
                 </div>

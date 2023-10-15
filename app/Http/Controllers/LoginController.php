@@ -27,4 +27,12 @@ class LoginController extends Controller
         alert()->error('Oops', 'You\'re Email Or Password Is Incorrect');
         return back();
     }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/login');
+    }
 }

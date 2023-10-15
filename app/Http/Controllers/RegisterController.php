@@ -18,7 +18,8 @@ class RegisterController extends Controller
             'name' => 'required||unique:users|min:5|max:20',
             'email' => 'required|email:dns|unique:users',
             'password' => 'required|min:5|max:255',
-            'repassword' => 'required_with:password|same:password'
+            'repassword' => 'required_with:password|same:password',
+            'terms'=>'required'
         ]);
 
         User::create($validate_data);

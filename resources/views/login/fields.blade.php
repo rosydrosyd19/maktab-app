@@ -29,12 +29,13 @@
         </div>
         <div class="row">
           <div class="col-8">
-            <div class="icheck-primary">
+            {{-- remember me --}}
+            {{-- <div class="icheck-primary">
               <input type="checkbox" id="remember">
               <label for="remember">
                 Remember Me
               </label>
-            </div>
+            </div> --}}
           </div>
           <!-- /.col -->
           <div class="col-4">

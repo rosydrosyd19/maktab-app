@@ -24,7 +24,7 @@ Route::get('/', function () {
 Route::group(['middleware' => 'guest'], function()
 {
     // login
-    Route::get('/login', [LoginController::class, 'index']);
+    Route::get('/login', [LoginController::class, 'index'])->name('login');
     Route::post('/login', [LoginController::class, 'authenticate']);
 
     // register
@@ -32,5 +32,10 @@ Route::group(['middleware' => 'guest'], function()
     Route::post('/register', [RegisterController::class, 'store']);
 });
 
+Route::group(['middleware' => 'auth'], function()
+{
 // dashboard
 Route::get('/dashboard', [DashboardController::class, 'index']);
+//logout
+Route::post('/logout', [LoginController::class, 'logout']);
+});
