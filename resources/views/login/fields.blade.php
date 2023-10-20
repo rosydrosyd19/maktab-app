@@ -30,12 +30,13 @@
         <div class="row">
           <div class="col-8">
             {{-- remember me --}}
-            {{-- <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Remember Me
-              </label>
-            </div> --}}
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="remember" name="remember" 
+              {{ old('remember') ? 'checked' : '' }}>
+                <label class="form-check-label">
+                    Remember Me
+                </label>
+            </div>
           </div>
           <!-- /.col -->
           <div class="col-4">

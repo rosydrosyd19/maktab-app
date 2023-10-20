@@ -112,4 +112,7 @@ return [
 
     'password_timeout' => 10800,
 
+
+    'remember' => 1440, // Ini akan mengingat pengguna selama 1440 menit (1 hari).
+
 ];
