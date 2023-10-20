@@ -1,0 +1,12 @@
+git init
+git commit -m "commit_name"
+git branch -M main
+git add .
+git push -f origin main
+
+Key
+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
+
+
+on progress 
+membuat show di laravel
