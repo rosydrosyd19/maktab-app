@@ -1,5 +1,7 @@
 @include('layouts.header')
 
+@include('layouts.footer')
+
 @include('layouts.navbar')
 
 @include('layouts.sidebar')
@@ -9,5 +11,3 @@
 @include('layouts.preloader')
 
 @include('layouts.footer-content')
-
-@include('layouts.footer')
