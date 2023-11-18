@@ -1,7 +1,7 @@
  <!-- Main Sidebar Container -->
  <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-        <a href="index3.html" class="brand-link">
+        <a href="dashboard" class="brand-link">
         <img src="adminlte/dist/img/maktab-lite.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
         <span class="brand-text font-weight-light">Maktab<b>App</b></span>
@@ -36,25 +36,32 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+        <li class="nav-header">User Access</li>
+        <li class="nav-item has-treeview {{ (request()->is('user*')) ? 'active menu-open' : '' }}">
+            <a href="#" class="nav-link {{ (request()->is('user*')) ? 'active' : '' }}">
+              <i class="nav-icon fas fa-users"></i>
               <p>
-                Starter Pages
+                Users Authorization
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="user" class="nav-link {{ (request()->is('user*')) ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
+                  <p>User</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#" class="nav-link {{ (request()->is('permission*')) ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
+                  <p>Permission</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link {{ (request()->is('role*')) ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Role</p>
                 </a>
               </li>
             </ul>
